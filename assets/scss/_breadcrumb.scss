@@ -7,6 +7,7 @@
     max-width: 1200px;
     margin-inline: auto;
     margin-bottom: 0;
+    padding-inline: 15px;
     li {
       @include text-uppercase(12px, 400);
     }

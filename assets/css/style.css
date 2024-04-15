@@ -39,6 +39,7 @@ h1 {
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   line-height: 53.35px;
+  margin-bottom: 0;
 }
 
 p {
@@ -89,6 +90,7 @@ ul {
   max-width: 1200px;
   margin-inline: auto;
   margin-bottom: 0;
+  padding-inline: 15px;
 }
 .breadcrumb-container .breadcrumb li {
   font-size: 12px;
@@ -178,6 +180,9 @@ ul {
   font-weight: 500;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
+  display: block;
+  color: #000;
+  cursor: pointer;
 }
 .foods-service .btn-main:hover {
   background-color: #25232d;
@@ -251,6 +256,26 @@ ul {
   .foods-service .list-item {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+.food-detail {
+  margin-top: 56px;
+}
+.food-detail .title {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 14.06px;
+  color: #20c6ba;
+  margin-bottom: 16px;
+  display: block;
+}
+.food-detail h1 {
+  font-size: 36px;
+  line-height: 50px;
+}
+.food-detail .share > span {
+  padding-left: 10px;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

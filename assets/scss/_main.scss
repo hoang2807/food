@@ -36,6 +36,7 @@ h1 {
   @include text-uppercase(36px, 700);
   font-family: 'Oswald', sans-serif;
   line-height: 53.35px;
+  margin-bottom: 0;
 }
 
 p {
@@ -46,5 +47,4 @@ p {
 
 ul {
   list-style: none;
-  // margin-bottom: 0;
 }

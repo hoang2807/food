@@ -1,0 +1,20 @@
+.food-detail {
+  margin-top: 56px;
+  .title {
+    @include text-uppercase(12px, 500);
+    line-height: 14.06px;
+    color: $text-green;
+    margin-bottom: 16px;
+    display: block;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .share {
+    > span {
+      padding-left: 10px;
+      font-size: 14px;
+    }
+  }
+}
