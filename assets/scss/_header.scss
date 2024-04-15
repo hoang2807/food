@@ -1,0 +1,20 @@
+.header {
+  background: $green;
+  // padding: 21px 192px 19px 197px;
+  .container {
+    max-width: 1212px;
+    width: 100%;
+    @include flex(space-between, center, 334px);
+    padding-top: 20px;
+    padding-bottom: 19px;
+    .nav {
+      padding: 10px;
+      @include flex(unset, center, 60px);
+      .nav-item {
+        @include text-uppercase(14px, 600);
+        color: $white;
+        font-family: 'Oswald', sans-serif;
+      }
+    }
+  }
+}

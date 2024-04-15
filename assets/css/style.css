@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.btn-main {
+  background-color: #019e93;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  padding-inline: 15px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  line-height: 53.35px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.header {
+  background: #019e93;
+}
+.header .container {
+  max-width: 1212px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 334px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+}
+.header .container .nav {
+  padding: 10px;
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  gap: 60px;
+}
+.header .container .nav .nav-item {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.banner img {
+  width: 50vw;
+}
+.banner > span {
+  position: absolute;
+  bottom: 31%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #019e93;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  padding: 10px 30px;
+  color: #fff;
+}
+
+.breadcrumb-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+}
+.breadcrumb-container .breadcrumb {
+  padding-top: 17px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.breadcrumb-container .breadcrumb a {
+  color: #20c6ba;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.foods-service {
+  margin-top: 88px;
+  margin-bottom: 12px;
+}
+.foods-service > p {
+  max-width: 719px;
+  width: 100%;
+  margin-inline: auto;
+  margin-bottom: 61px;
+}
+.foods-service .list-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 45px;
+  row-gap: 60px;
+}
+.foods-service .list-item img {
+  margin-bottom: 29px;
+}
+.foods-service .list-item .title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
+  margin-bottom: 10px;
+}
+.foods-service .list-item .description {
+  font-size: 16px;
+  text-align: start;
+  margin-bottom: 10px;
+}
+.foods-service .list-item .price span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
+}
+.foods-service .list-item .price .off {
+  text-decoration: line-through;
+  color: #afafaf;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  margin-left: 16px;
+}
+.foods-service .btn-main {
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 58px;
+  padding-block: 18px;
+  border-width: 0px;
+  transition: all 0.35s ease;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+.foods-service .btn-main:hover {
+  background-color: #25232d;
+  color: #21c7bb;
+}
+.foods-service .guide {
+  margin-top: 85px;
+}
+.foods-service .guide .title {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 23.44px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.foods-service .guide .des {
+  text-align: start;
+  margin-bottom: 15px;
+  max-width: 797px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 30px;
+}
+.foods-service .guide ul {
+  margin-bottom: 12px;
+  list-style: none;
+  padding-left: 0;
+}
+.foods-service .guide ul li {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.foods-service .guide ul .bold {
+  font-weight: 600;
+}
+.foods-service .guide ul li::before {
+  content: "";
+  background-image: url("../icon/markup.svg");
+  background-size: contain;
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  margin-right: 11px;
+}
+
+@media screen and (max-width: 1240px) {
+  .foods-service .list-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .foods-service .list-item img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .banner > span {
+    bottom: 44%;
+    padding: 5px 15px;
+    width: 180px;
+  }
+  .breadcrumb-container .breadcrumb {
+    padding-inline: 15px;
+  }
+  .foods-service .list-item {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

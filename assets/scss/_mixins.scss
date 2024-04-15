@@ -1,0 +1,17 @@
+@mixin flex($j, $a, $g) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+  gap: $g;
+}
+
+@mixin text-uppercase($fontSize, $fontWeight) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  text-transform: uppercase;
+}
+
+@mixin text($fontSize, $fontWeight) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}

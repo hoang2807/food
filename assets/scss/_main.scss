@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.btn-main {
+  background-color: $green;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  padding-inline: 15px;
+  margin: 0 auto;
+}
+
+h1 {
+  @include text-uppercase(36px, 700);
+  font-family: 'Oswald', sans-serif;
+  line-height: 53.35px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
