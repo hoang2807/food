@@ -47,6 +47,10 @@ p {
   line-height: 32px;
 }
 
+ul {
+  list-style: none;
+}
+
 .header {
   background: #019e93;
 }
@@ -75,6 +79,29 @@ p {
   font-family: "Oswald", sans-serif;
 }
 
+.breadcrumb-container {
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+  padding-top: 17px;
+  padding-bottom: 14px;
+}
+.breadcrumb-container .breadcrumb {
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-bottom: 0;
+}
+.breadcrumb-container .breadcrumb li {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.breadcrumb-container .breadcrumb a {
+  color: #20c6ba;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .banner {
   width: 100%;
   display: flex;
@@ -95,23 +122,6 @@ p {
   font-family: "Oswald", sans-serif;
   padding: 10px 30px;
   color: #fff;
-}
-
-.breadcrumb-container {
-  max-width: 1200px;
-  width: 100%;
-  margin-inline: auto;
-}
-.breadcrumb-container .breadcrumb {
-  padding-top: 17px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid #f0f0f0;
-}
-.breadcrumb-container .breadcrumb a {
-  color: #20c6ba;
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
 }
 
 .foods-service {
@@ -195,7 +205,6 @@ p {
 }
 .foods-service .guide ul {
   margin-bottom: 12px;
-  list-style: none;
   padding-left: 0;
 }
 .foods-service .guide ul li {

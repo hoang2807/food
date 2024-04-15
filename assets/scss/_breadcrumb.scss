@@ -1,0 +1,18 @@
+.breadcrumb-container {
+  width: 100%;
+  border-bottom: 1px solid $dark-white;
+  padding-top: 17px;
+  padding-bottom: 14px;
+  .breadcrumb {
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-bottom: 0;
+    li {
+      @include text-uppercase(12px, 400);
+    }
+    a {
+      color: $text-green;
+      @include text-uppercase(12px, 400);
+    }
+  }
+}

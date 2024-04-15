@@ -18,21 +18,6 @@
   }
 }
 
-.breadcrumb-container {
-  max-width: 1200px;
-  width: 100%;
-  margin-inline: auto;
-  .breadcrumb {
-    padding-top: 17px;
-    padding-bottom: 14px;
-    border-bottom: 1px solid $dark-white;
-    a {
-      color: $text-green;
-      @include text-uppercase(12px, 400);
-    }
-  }
-}
-
 .foods-service {
   margin-top: 88px;
   margin-bottom: 12px;
@@ -109,7 +94,6 @@
     }
     ul {
       margin-bottom: 12px;
-      list-style: none;
       padding-left: 0;
       li {
         @include text(14px, 400);
