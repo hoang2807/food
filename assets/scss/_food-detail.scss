@@ -180,3 +180,65 @@
     }
   }
 }
+
+.related-food {
+  margin-top: 77px;
+  position: relative;
+  h2 {
+    @include text-uppercase(30px, 700);
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    margin-bottom: 46px;
+  }
+  .swiper {
+    width: 100%;
+    &-slide {
+      display: flex;
+      flex-direction: column;
+      img {
+        max-width: 370px;
+        width: 100%;
+      }
+      .title {
+        @include text-uppercase(18px, 700);
+        line-height: 21.09px;
+        letter-spacing: 0.05em;
+        margin-top: 29px;
+        margin-bottom: 10px;
+      }
+      p {
+        line-height: 26px;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .price {
+        @include text(18px, 700);
+        line-height: 21.09px;
+        letter-spacing: 0.05em;
+        .off {
+          font-weight: 400;
+          color: $text-grey;
+          padding-left: 16px;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+  .swiper-button-prev {
+    top: calc(50% - 30px);
+    left: 15px;
+    transform: translate(-50%, -50%);
+    &::after {
+      display: none;
+    }
+  }
+
+  .swiper-button-next {
+    top: calc(50% - 30px);
+    right: 15px;
+    transform: translate(50%, -50%);
+    &::after {
+      display: none;
+    }
+  }
+}

@@ -66,6 +66,11 @@ ul {
   padding: 0;
 }
 
+h2 {
+  margin: 0;
+  color: #000;
+}
+
 .header {
   background: #019e93;
 }
@@ -451,6 +456,72 @@ ul {
 .food-detail .food-detail-des .des-big-image {
   max-width: 1198px;
   width: 100%;
+}
+
+.related-food {
+  margin-top: 77px;
+  position: relative;
+}
+.related-food h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 45px;
+  letter-spacing: 0.05em;
+  margin-bottom: 46px;
+}
+.related-food .swiper {
+  width: 100%;
+}
+.related-food .swiper-slide {
+  display: flex;
+  flex-direction: column;
+}
+.related-food .swiper-slide img {
+  max-width: 370px;
+  width: 100%;
+}
+.related-food .swiper-slide .title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 21.09px;
+  letter-spacing: 0.05em;
+  margin-top: 29px;
+  margin-bottom: 10px;
+}
+.related-food .swiper-slide p {
+  line-height: 26px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.related-food .swiper-slide .price {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
+  letter-spacing: 0.05em;
+}
+.related-food .swiper-slide .price .off {
+  font-weight: 400;
+  color: #afafaf;
+  padding-left: 16px;
+  text-decoration: line-through;
+}
+.related-food .swiper-button-prev {
+  top: calc(50% - 30px);
+  left: 15px;
+  transform: translate(-50%, -50%);
+}
+.related-food .swiper-button-prev::after {
+  display: none;
+}
+.related-food .swiper-button-next {
+  top: calc(50% - 30px);
+  right: 15px;
+  transform: translate(50%, -50%);
+}
+.related-food .swiper-button-next::after {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
