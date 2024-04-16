@@ -436,6 +436,9 @@ h2 {
 .food-detail .food-detail-des p:nth-child(11) {
   margin-top: 60px;
 }
+.food-detail .food-detail-des .img {
+  width: 100%;
+}
 .food-detail .food-detail-des ul {
   margin-top: 22px;
   margin-left: 48px;
@@ -460,6 +463,7 @@ h2 {
 
 .related-food {
   margin-top: 77px;
+  margin-bottom: 122px;
   position: relative;
 }
 .related-food h2 {
@@ -522,6 +526,32 @@ h2 {
 }
 .related-food .swiper-button-next::after {
   display: none;
+}
+
+@media screen and (max-width: 1220px) {
+  .food-detail-des .img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1098px) {
+  .food-detail-content {
+    flex-direction: column;
+  }
+  .food-detail-content .tab-image {
+    justify-content: flex-start !important;
+  }
+}
+@media screen and (max-width: 657px) {
+  .food-detail-content .tab-image {
+    flex-direction: column;
+  }
+  .food-detail-content .tab-image-container {
+    flex-direction: row !important;
+  }
+  .food-detail-content .tab-image .image {
+    width: 100% !important;
+    max-width: 543px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

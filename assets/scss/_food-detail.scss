@@ -156,6 +156,9 @@
         margin-top: 60px;
       }
     }
+    .img {
+      width: 100%;
+    }
     ul {
       margin-top: 22px;
       margin-left: 48px;
@@ -183,6 +186,7 @@
 
 .related-food {
   margin-top: 77px;
+  margin-bottom: 122px;
   position: relative;
   h2 {
     @include text-uppercase(30px, 700);
@@ -239,6 +243,44 @@
     transform: translate(50%, -50%);
     &::after {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .food-detail {
+    &-des {
+      .img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1098px) {
+  .food-detail {
+    &-content {
+      flex-direction: column;
+      .tab-image {
+        justify-content: flex-start !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 657px) {
+  .food-detail {
+    &-content {
+      .tab-image {
+        flex-direction: column;
+        &-container {
+          flex-direction: row !important;
+        }
+        .image {
+          width: 100% !important;
+          max-width: 543px !important;
+        }
+      }
     }
   }
 }
