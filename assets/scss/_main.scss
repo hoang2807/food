@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  overflow: hidden;
+}
+
 .btn-main {
   background-color: $green;
   font-family: 'Oswald', sans-serif;
@@ -40,11 +44,16 @@ a {
   margin: 0 auto;
 }
 
+h1,
+h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
 h1 {
   @include text-uppercase(36px, 700);
-  font-family: 'Oswald', sans-serif;
   line-height: 53.35px;
-  margin-bottom: 0;
+  margin: 0;
+  letter-spacing: 0.05em;
 }
 
 p {
