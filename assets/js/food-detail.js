@@ -10,10 +10,6 @@ const slideBlogs_detail =
     spaceBetween: 38,
     speed: 1000,
     watchOverflow: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
     breakpoints: {
       200: {
         slidesPerView: 1,

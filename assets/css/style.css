@@ -726,6 +726,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin-top: 51px;
+  gap: 45px;
 }
 .culture-container ul > li {
   display: flex;
@@ -734,9 +735,11 @@ h2 {
   background-color: #fff;
   border-radius: 15px;
   min-height: 449px;
+  max-width: 370px;
+  width: 100%;
 }
 .culture-container ul > li > img {
-  width: 370px;
+  width: 100%;
   background-size: cover;
   border-radius: 15px 15px 0 0;
   vertical-align: middle;
@@ -746,6 +749,17 @@ h2 {
 }
 .culture-container ul > li p {
   margin-left: 35px;
+  color: #3b3d42;
+  padding-right: 10px;
+}
+.culture-container ul > li > .title {
+  margin-top: 27px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.culture-container ul > li > .des {
+  font-size: 18px;
 }
 
 .qualifications {
@@ -780,6 +794,7 @@ h2 {
   margin-top: 101px;
   display: flex;
   justify-content: space-between;
+  gap: 194px;
 }
 .qualifications-text-left {
   max-width: 461px;
@@ -846,6 +861,65 @@ h2 {
   display: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .overview .overview-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .overview .overview-text-left {
+    max-width: 100%;
+  }
+  .overview .overview-text-right {
+    max-width: 100%;
+  }
+  .qualifications-swiper .swiper-button-next {
+    top: 85%;
+  }
+  .qualifications-swiper .swiper-button-prev {
+    top: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .overview-content {
+    flex-direction: column-reverse;
+    gap: 250px;
+  }
+  .overview-content-right {
+    max-width: 100%;
+  }
+  .overview-content-right .img1 {
+    max-width: 100%;
+  }
+  .overview-content-right .img2 {
+    display: none;
+  }
+  .culture-container ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .qualifications-text {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .qualifications-swiper .swiper-button-next {
+    display: none;
+  }
+  .qualifications-swiper .swiper-button-prev {
+    display: none;
+  }
+  .qualifications-swiper .swiper-slide {
+    flex-direction: column;
+  }
+  .qualifications-swiper .swiper-slide .content {
+    width: 100%;
+  }
+  .qualifications-swiper .swiper-slide .content > span {
+    padding: 14px 10px;
+  }
+  .qualifications-swiper .swiper-slide img {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 425px) {
   .about-banner {
     flex-direction: column;
@@ -857,6 +931,11 @@ h2 {
     bottom: 44%;
     padding: 5px 15px;
     width: 180px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .overview h1::after {
+    top: 116px;
   }
 }
 
