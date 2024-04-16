@@ -356,9 +356,11 @@ h2 {
 .food-detail .food-detail-content .content ul > li::before {
   content: "";
   background-image: url("../icon/food-deail/markup.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   display: inline-block;
   width: 16px;
-  height: 16px;
+  height: 19px;
   margin-right: 13px;
   vertical-align: middle;
 }
@@ -414,32 +416,32 @@ h2 {
   font-weight: 700;
   line-height: 50px;
 }
-.food-detail .food-detail-des p {
+.food-detail .food-detail-des p.detail-text {
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.02em;
 }
-.food-detail .food-detail-des p:nth-child(2) {
+.food-detail .food-detail-des p.detail-text:nth-child(2) {
   margin-bottom: 29px;
 }
-.food-detail .food-detail-des p:nth-child(3) {
+.food-detail .food-detail-des p.detail-text:nth-child(3) {
   margin-bottom: 22px;
 }
-.food-detail .food-detail-des p:nth-child(5) {
+.food-detail .food-detail-des p.detail-text:nth-child(5) {
   margin-bottom: 19px;
 }
-.food-detail .food-detail-des p:nth-child(6) {
+.food-detail .food-detail-des p.detail-text:nth-child(6) {
   margin-bottom: 60px;
 }
-.food-detail .food-detail-des p:nth-child(8) {
+.food-detail .food-detail-des p.detail-text:nth-child(8) {
   margin-top: 60px;
   margin-bottom: 19px;
 }
-.food-detail .food-detail-des p:nth-child(9) {
+.food-detail .food-detail-des p.detail-text:nth-child(9) {
   margin-bottom: 69px;
 }
-.food-detail .food-detail-des p:nth-child(11) {
+.food-detail .food-detail-des p.detail-text:nth-child(11) {
   margin-top: 60px;
 }
 .food-detail .food-detail-des .img {
@@ -453,14 +455,11 @@ h2 {
 }
 .food-detail .food-detail-des ul > li {
   font-size: 18px;
+  display: flex;
+  align-items: center;
 }
-.food-detail .food-detail-des ul > li::before {
-  content: "";
-  background-image: url("../icon/food-deail/markup.svg");
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
+.food-detail .food-detail-des ul > li > p {
+  padding-left: 11px;
 }
 .food-detail .food-detail-des .des-big-image {
   max-width: 1198px;
@@ -545,6 +544,11 @@ h2 {
   }
   .food-detail-content .tab-image {
     justify-content: flex-start !important;
+  }
+}
+@media screen and (max-width: 787px) {
+  .food-detail .food-detail-des ul > li img {
+    padding-bottom: 31px;
   }
 }
 @media screen and (max-width: 657px) {

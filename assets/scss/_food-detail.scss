@@ -72,10 +72,11 @@
         > li::before {
           content: '';
           background-image: url('../icon/food-deail/markup.svg');
-          // background-size: contain;
+          background-size: contain;
+          background-repeat: no-repeat;
           display: inline-block;
           width: 16px;
-          height: 16px;
+          height: 19px;
           margin-right: 13px;
           vertical-align: middle;
         }
@@ -129,7 +130,7 @@
       @include text(24px, 700);
       line-height: 50px;
     }
-    p {
+    p.detail-text {
       @include text(18px, 300);
       line-height: 30px;
       letter-spacing: 0.02em;
@@ -166,15 +167,11 @@
       margin-bottom: 36px;
       > li {
         font-size: 18px;
-      }
-      > li::before {
-        content: '';
-        background-image: url('../icon/food-deail/markup.svg');
-        // background-size: contain;
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        > p {
+          padding-left: 11px;
+        }
       }
     }
     .des-big-image {
@@ -263,6 +260,20 @@
       flex-direction: column;
       .tab-image {
         justify-content: flex-start !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .food-detail {
+    .food-detail-des {
+      ul {
+        > li {
+          img {
+            padding-bottom: 31px;
+          }
+        }
       }
     }
   }
