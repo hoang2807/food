@@ -31,9 +31,10 @@
       </section>
       <!-- end breadcrumb -->
 
+      <!-- food detail -->
       <section class="food-detail container">
         <span class="title">Food Services</span>
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex justify-content-between align-items-center w-100">
           <h1>WALKING TO MACHU PICCHU, PERU</h1>
           <div class="share">
             <img src="./assets/icon/share.svg" alt="" />
@@ -41,7 +42,66 @@
           </div>
         </div>
         <div class="food-detail-content d-flex justify-content-between">
-          <div class="tab-image"></div>
+          <div class="tab-image">
+            <div class="tab-image-container">
+              <img
+                src="./assets/images/food-detail/image1.png"
+                alt=""
+                onclick="changeImage(this)"
+              />
+              <img
+                src="./assets/images/food-detail/image2.png"
+                alt=""
+                onclick="changeImage(this)"
+              />
+              <img
+                src="./assets/images/food-detail/image3.png"
+                alt=""
+                onclick="changeImage(this)"
+              />
+              <img
+                src="./assets/images/food-detail/image1.png"
+                alt=""
+                onclick="changeImage(this)"
+              />
+            </div>
+            <img
+              src="./assets/images/food-detail/image2.png"
+              alt=""
+              class="image"
+              id="bigImage"
+            />
+          </div>
+          <div class="content">
+            <div class="price">
+              <span>$320.00</span>
+              <span class="off">$396.00</span>
+            </div>
+            <p>
+              Budget trip doesn’t mean boring! There are numerous places worth
+              visiting even if you don’t have much money, places worth visiting
+              even if you don’t have much...
+            </p>
+            <ul>
+              <li>Various specifications </li>
+              <li>
+                Customizations available (includes graphic printing and specific
+                box dimensions);
+              </li>
+              <li>
+                Alphanumeric printed grid allows for quick sample location.
+              </li>
+            </ul>
+            <a href="#" class="btn-main">Get a Quote Now</a>
+            <a href="#" class="call">Call us: +94 90 888 1981</a>
+            <div class="help">
+              <img src="./assets/icon/food-deail/help.svg" alt="" />
+              <span>
+                Want to consult your project and get an individual price offer?
+                <span class="contact">Contact Us</span>
+              </span>
+            </div>
+          </div>
         </div>
 
         <div class="food-detail-des">
@@ -85,10 +145,10 @@
             of “products and services”, in order to boost the high-quality
             development of county level medical clusters
           </p>
-          <!-- <div class=""> -->
-          <img src="./assets/images/food-detail/image1.png" alt="" />
-          <img src="./assets/images/food-detail/image2.png" alt="" />
-          <!-- </div> -->
+          <div class="d-flex" style="gap: 20px">
+            <img src="./assets/images/food-detail/image1.png" alt="" />
+            <img src="./assets/images/food-detail/image2.png" alt="" />
+          </div>
           <p>
             Budget trip doesn’t mean boring! There are numerous places worth
             visiting even if you don’t have much money. The golden sands of
@@ -104,7 +164,11 @@
             of “products and services”, in order to boost the high-quality
             development of county level medical clusters
           </p>
-          <img src="./assets/images/food-detail/image3.png" alt="" />
+          <img
+            src="./assets/images/food-detail/image3.png"
+            alt=""
+            class="des-big-image"
+          />
           <p>
             Budget trip doesn’t mean boring! There are numerous places worth
             visiting even if you don’t have much money. The golden sands of
@@ -117,8 +181,16 @@
           </p>
         </div>
       </section>
+      <!-- end food detail -->
+
+      <!-- related food -->
+      <section class="related-food container">
+        <h1>Related foods</h1>
+      </section>
+      <!-- end related food -->
     </main>
   </body>
 
   <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/food-detail.js"></script>
 </html>

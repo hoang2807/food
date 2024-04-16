@@ -19,6 +19,14 @@ body {
 
 .btn-main {
   background-color: $green;
+  font-family: 'Oswald', sans-serif;
+  transition: all 0.35s ease;
+  @include text-uppercase(16px, 500);
+  cursor: pointer;
+}
+.btn-main:hover {
+  background-color: #25232d;
+  color: #21c7bb;
 }
 
 a {
@@ -43,8 +51,11 @@ p {
   font-size: 18px;
   font-weight: 300;
   line-height: 32px;
+  margin: 0;
 }
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
