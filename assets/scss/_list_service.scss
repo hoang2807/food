@@ -146,6 +146,14 @@
   }
 }
 
+@media screen and (max-width: 487px) {
+  .banner {
+    > h1 {
+      padding: 5px 15px;
+    }
+  }
+}
+
 @media screen and (max-width: 425px) {
   .banner {
     flex-direction: column;

@@ -282,6 +282,11 @@ h2 {
     width: 100%;
   }
 }
+@media screen and (max-width: 487px) {
+  .banner > h1 {
+    padding: 5px 15px;
+  }
+}
 @media screen and (max-width: 425px) {
   .banner {
     flex-direction: column;
@@ -1014,6 +1019,12 @@ h2 {
   }
   .qualifications-swiper .swiper-slide img {
     width: 100%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .about-banner > h1 {
+    text-align: center;
+    padding: 5px 15px;
   }
 }
 @media screen and (max-width: 425px) {
