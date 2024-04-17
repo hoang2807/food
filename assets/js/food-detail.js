@@ -32,3 +32,32 @@ const slideBlogs_detail =
       prevEl: ".related-food .swiper-button-prev",
     },
   }) || false;
+
+
+const slideImage =
+  new Swiper(".food-detail-content .swiper-container", {
+    direction: "horizontal",
+    slidesPerView: 4,
+    spaceBetween: 28,
+    speed: 1000,
+    breakpoints: {
+      200: {
+        direction: "vertical",
+        slidesPerView: 4,
+        spaceBetween: 16,
+      },
+      427: {
+        direction: "horizontal",
+        slidesPerView: 4,
+        spaceBetween: 16,
+      },
+      657: {
+        direction: "vertical",
+        slidesPerView: 3,
+        spaceBetween: 28,
+      },
+    },
+    navigation: {
+      prevEl: ".food-detail-content .scroll",
+    },
+  }) || false;

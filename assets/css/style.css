@@ -297,23 +297,38 @@ h2 {
 .food-detail .food-detail-content {
   gap: 60px;
   margin-top: 46px;
+  min-height: 598px;
+  overflow: hidden;
 }
 .food-detail .food-detail-content .tab-image {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: unset;
   gap: 20px;
 }
+.food-detail .food-detail-content .tab-image .scroll {
+  position: absolute;
+  left: 4%;
+  bottom: 22%;
+}
 .food-detail .food-detail-content .tab-image .image {
   width: 543px;
   height: 529px;
 }
+.food-detail .food-detail-content .tab-image .swiper-container {
+  height: 65%;
+}
 .food-detail .food-detail-content .tab-image-container {
-  display: flex;
-  justify-content: unset;
-  align-items: unset;
-  gap: 15px;
-  flex-direction: column;
+  overflow-y: hidden;
+}
+.food-detail .food-detail-content .tab-image-container .swiper-slide {
+  width: 75px !important;
+  height: 75px !important;
+}
+.food-detail .food-detail-content .tab-image-container .swiper-slide img {
+  width: 75px;
+  height: 75px;
 }
 .food-detail .food-detail-content .tab-image-container > img {
   border-radius: 5px;
@@ -406,6 +421,11 @@ h2 {
 .food-detail .food-detail-content .content .help > span .contact {
   color: #20c6ba;
   text-decoration: underline;
+}
+.food-detail .food-detail-content .swiper-slide {
+  max-width: 75px;
+  width: 100%;
+  height: 75px;
 }
 .food-detail .food-detail-des {
   margin-top: 93px;
@@ -545,6 +565,9 @@ h2 {
   .food-detail-content .tab-image {
     justify-content: flex-start !important;
   }
+  .food-detail-content .tab-image .swiper-container {
+    height: 360px !important;
+  }
 }
 @media screen and (max-width: 787px) {
   .food-detail .food-detail-des ul > li img {
@@ -554,6 +577,12 @@ h2 {
 @media screen and (max-width: 657px) {
   .food-detail-content .tab-image {
     flex-direction: column;
+  }
+  .food-detail-content .tab-image .swiper-container {
+    height: 75px !important;
+  }
+  .food-detail-content .tab-image .scroll {
+    display: none;
   }
   .food-detail-content .tab-image-container {
     flex-direction: row !important;
@@ -743,6 +772,7 @@ h2 {
   width: 100%;
 }
 .culture-container ul > li > img {
+  max-width: 370px;
   width: 100%;
   background-size: cover;
   border-radius: 15px 15px 0 0;
