@@ -170,19 +170,32 @@ h2 {
   column-gap: 45px;
   row-gap: 60px;
 }
+.foods-service .list-item a {
+  cursor: pointer;
+}
+.foods-service .list-item a:hover img {
+  opacity: 0.6;
+  filter: blur(2px);
+}
 .foods-service .list-item img {
   margin-bottom: 29px;
+  transition: all 0.3s;
 }
 .foods-service .list-item .title {
   font-size: 18px;
   font-weight: 700;
   line-height: 21.09px;
   margin-bottom: 10px;
+  color: #000;
 }
 .foods-service .list-item .description {
   font-size: 16px;
   text-align: start;
   margin-bottom: 10px;
+  color: #3b3d42;
+}
+.foods-service .list-item .price {
+  color: #000;
 }
 .foods-service .list-item .price span {
   font-size: 18px;

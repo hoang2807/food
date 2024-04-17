@@ -40,6 +40,7 @@ const slideImage =
     slidesPerView: 4,
     spaceBetween: 28,
     speed: 1000,
+    // loop: true,
     breakpoints: {
       200: {
         direction: "vertical",

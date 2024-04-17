@@ -32,20 +32,33 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 45px;
     row-gap: 60px;
+    a {
+      cursor: pointer;
+      &:hover {
+        img {
+          opacity: 0.6;
+          filter: blur(2px);
+        }
+      }
+    }
     img {
       margin-bottom: 29px;
+      transition: all 0.3s;
     }
     .title {
       @include text(18px, 700);
       line-height: 21.09px;
       margin-bottom: 10px;
+      color: $black;
     }
     .description {
       font-size: 16px;
       text-align: start;
       margin-bottom: 10px;
+      color: $text-dark;
     }
     .price {
+      color: $black;
       span {
         @include text(18px, 700);
         line-height: 21.09px;
