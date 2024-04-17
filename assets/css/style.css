@@ -140,7 +140,7 @@ h2 {
 .banner img {
   width: 50vw;
 }
-.banner > span {
+.banner > h1 {
   position: absolute;
   bottom: 31%;
   left: 50%;
@@ -158,6 +158,13 @@ h2 {
   margin-top: 88px;
   margin-bottom: 12px;
 }
+.foods-service > h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 53.35px;
+  letter-spacing: 0.05em;
+}
 .foods-service > .des {
   max-width: 719px;
   width: 100%;
@@ -170,12 +177,18 @@ h2 {
   column-gap: 45px;
   row-gap: 60px;
 }
-.foods-service .list-item a {
+.foods-service .list-item .item {
   cursor: pointer;
 }
-.foods-service .list-item a:hover img {
+.foods-service .list-item .item:hover img {
   opacity: 0.6;
   filter: blur(2px);
+}
+.foods-service .list-item a.item {
+  display: none;
+}
+.foods-service .list-item .item.show {
+  display: inline-block;
 }
 .foods-service .list-item img {
   margin-bottom: 29px;
@@ -310,8 +323,7 @@ h2 {
 .food-detail .food-detail-content {
   gap: 60px;
   margin-top: 46px;
-  min-height: 598px;
-  overflow: hidden;
+  height: 530px;
 }
 .food-detail .food-detail-content .tab-image {
   position: relative;
@@ -323,17 +335,16 @@ h2 {
 .food-detail .food-detail-content .tab-image .scroll {
   position: absolute;
   left: 4%;
-  bottom: 22%;
+  bottom: 151px;
+  z-index: 3;
 }
 .food-detail .food-detail-content .tab-image .image {
   width: 543px;
   height: 529px;
 }
 .food-detail .food-detail-content .tab-image .swiper-container {
+  overflow: hidden;
   height: 65%;
-}
-.food-detail .food-detail-content .tab-image-container {
-  overflow-y: hidden;
 }
 .food-detail .food-detail-content .tab-image-container .swiper-slide {
   width: 75px !important;
@@ -403,6 +414,9 @@ h2 {
   color: #000;
   line-height: 23.71px;
   margin-bottom: 22px;
+}
+.food-detail .food-detail-content .content .btn-main:hover {
+  color: #20c6ba;
 }
 .food-detail .food-detail-content .content .call {
   display: block;
@@ -591,6 +605,7 @@ h2 {
 @media screen and (max-width: 1098px) {
   .food-detail-content {
     flex-direction: column;
+    height: 100% !important;
   }
   .food-detail-content .tab-image {
     justify-content: flex-start !important;
@@ -621,6 +636,9 @@ h2 {
     width: 100% !important;
     max-width: 543px !important;
   }
+  .food-detail-content .tab-image-swiper {
+    width: 100%;
+  }
 }
 .about-banner {
   width: 100%;
@@ -630,7 +648,7 @@ h2 {
 .about-banner img {
   width: 50vw;
 }
-.about-banner > span {
+.about-banner > h1 {
   position: absolute;
   bottom: 31%;
   left: 50%;
@@ -647,10 +665,15 @@ h2 {
 .overview {
   margin-top: 88px;
 }
-.overview h1 {
+.overview h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 53.35px;
+  letter-spacing: 0.05em;
   position: relative;
 }
-.overview h1::after {
+.overview h2::after {
   content: "";
   width: 118px;
   height: 5px;
@@ -797,6 +820,7 @@ h2 {
   min-height: 449px;
   max-width: 370px;
   width: 100%;
+  padding-bottom: 3rem;
 }
 .culture-container ul > li a {
   display: flex;
@@ -1006,7 +1030,7 @@ h2 {
   }
 }
 @media screen and (max-width: 321px) {
-  .overview h1::after {
+  .overview h2::after {
     top: 116px;
   }
 }

@@ -40,20 +40,21 @@ const slideImage =
     slidesPerView: 4,
     spaceBetween: 28,
     speed: 1000,
+    loop: true,
     breakpoints: {
       200: {
-        direction: "vertical",
-        slidesPerView: 4,
-        spaceBetween: 16,
-      },
-      427: {
         direction: "horizontal",
         slidesPerView: 4,
         spaceBetween: 16,
       },
+      // 427: {
+      //   direction: "horizontal",
+      //   slidesPerView: 4,
+      //   spaceBetween: 16,
+      // },
       657: {
         direction: "vertical",
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 28,
       },
     },
