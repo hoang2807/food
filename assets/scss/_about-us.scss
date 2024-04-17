@@ -146,6 +146,7 @@
     position: relative;
     max-width: 1202px;
     width: 100%;
+    border-radius: 6px;
   }
   &-container {
     background-color: $bg-green;
@@ -168,42 +169,40 @@
         max-width: 370px;
         width: 100%;
         padding-bottom: 3rem;
-        a {
-          display: flex;
-          flex-direction: column;
-          &:hover {
-            img {
-              opacity: 0.6;
-              filter: blur(2px);
-            }
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        overflow: hidden;
+        &:hover {
+          img {
+            opacity: 0.6;
+            filter: blur(2px);
           }
-          > img {
-            max-width: 370px;
-            width: 100%;
-            background-size: cover;
-            border-radius: 15px 15px 0 0;
-            vertical-align: middle;
-            border-style: none;
-            height: 220px;
-            object-fit: cover;
-          }
-          h2 {
-            margin-left: 35px;
-          }
-          p {
-            margin-left: 35px;
-            color: $text-dark;
-            padding-right: 10px;
-          }
-          > .title {
-            margin-top: 27px;
-            @include text(22px, 600);
-
-            margin-bottom: 14px;
-          }
-          > .des {
-            font-size: 18px;
-          }
+        }
+        > a {
+          cursor: pointer;
+        }
+        a img {
+          border-radius: 15px 15px 0 0;
+          height: 93%;
+          width: 100%;
+          display: block;
+          object-fit: none;
+        }
+        p {
+          margin-left: 35px;
+          color: $text-dark;
+          padding-right: 10px;
+        }
+        > .title {
+          margin-top: 27px;
+          @include text(22px, 600);
+          margin-left: 35px;
+          margin-bottom: 14px;
+          color: $text-dark;
+        }
+        > .des {
+          font-size: 18px;
         }
       }
     }
@@ -246,6 +245,7 @@
       padding-left: 96px;
       > p {
         position: relative;
+        @include text(20px, 400);
         &::before {
           content: '';
           position: absolute;
@@ -261,6 +261,9 @@
     &-right {
       max-width: 458px;
       width: 100%;
+      > p {
+        @include text(16px, 400);
+      }
     }
   }
 
@@ -353,6 +356,11 @@
     ul {
       flex-direction: column;
       align-items: center;
+      > li {
+        a img {
+          height: 200px;
+        }
+      }
     }
   }
 

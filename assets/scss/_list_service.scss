@@ -25,6 +25,7 @@
     @include text-uppercase(36px, 700);
     line-height: 53.35px;
     letter-spacing: 0.05em;
+    margin-bottom: 12px;
   }
   > .des {
     max-width: 719px;
@@ -92,6 +93,8 @@
     border-width: 0px;
     display: block;
     color: $black;
+    letter-spacing: 0.4em;
+    line-height: 23.71px;
   }
   .guide {
     margin-top: 85px;

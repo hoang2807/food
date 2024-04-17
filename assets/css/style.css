@@ -118,7 +118,6 @@ h2 {
   max-width: 1200px;
   margin-inline: auto;
   margin-bottom: 0;
-  padding-inline: 15px;
 }
 .breadcrumb-container .breadcrumb li {
   font-size: 12px;
@@ -132,6 +131,11 @@ h2 {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1201px) {
+  .breadcrumb-container .breadcrumb {
+    padding-inline: 15px;
+  }
+}
 .banner {
   width: 100%;
   display: flex;
@@ -164,6 +168,7 @@ h2 {
   text-transform: uppercase;
   line-height: 53.35px;
   letter-spacing: 0.05em;
+  margin-bottom: 12px;
 }
 .foods-service > .des {
   max-width: 719px;
@@ -231,6 +236,8 @@ h2 {
   border-width: 0px;
   display: block;
   color: #000;
+  letter-spacing: 0.4em;
+  line-height: 23.71px;
 }
 .foods-service .guide {
   margin-top: 85px;
@@ -454,6 +461,7 @@ h2 {
   text-decoration: underline;
   display: inline;
   letter-spacing: 0;
+  padding-left: 0;
 }
 .food-detail .food-detail-content .swiper-slide {
   max-width: 75px;
@@ -800,6 +808,7 @@ h2 {
   position: relative;
   max-width: 1202px;
   width: 100%;
+  border-radius: 6px;
 }
 .culture-container {
   background-color: #cff4f1;
@@ -826,40 +835,39 @@ h2 {
   max-width: 370px;
   width: 100%;
   padding-bottom: 3rem;
-}
-.culture-container ul > li a {
   display: flex;
   flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
 }
-.culture-container ul > li a:hover img {
+.culture-container ul > li:hover img {
   opacity: 0.6;
   filter: blur(2px);
 }
-.culture-container ul > li a > img {
-  max-width: 370px;
-  width: 100%;
-  background-size: cover;
+.culture-container ul > li > a {
+  cursor: pointer;
+}
+.culture-container ul > li a img {
   border-radius: 15px 15px 0 0;
-  vertical-align: middle;
-  border-style: none;
-  height: 220px;
-  object-fit: cover;
+  height: 93%;
+  width: 100%;
+  display: block;
+  object-fit: none;
 }
-.culture-container ul > li a h2 {
-  margin-left: 35px;
-}
-.culture-container ul > li a p {
+.culture-container ul > li p {
   margin-left: 35px;
   color: #3b3d42;
   padding-right: 10px;
 }
-.culture-container ul > li a > .title {
+.culture-container ul > li > .title {
   margin-top: 27px;
   font-size: 22px;
   font-weight: 600;
+  margin-left: 35px;
   margin-bottom: 14px;
+  color: #3b3d42;
 }
-.culture-container ul > li a > .des {
+.culture-container ul > li > .des {
   font-size: 18px;
 }
 
@@ -904,6 +912,8 @@ h2 {
 }
 .qualifications-text-left > p {
   position: relative;
+  font-size: 20px;
+  font-weight: 400;
 }
 .qualifications-text-left > p::before {
   content: "";
@@ -918,6 +928,10 @@ h2 {
 .qualifications-text-right {
   max-width: 458px;
   width: 100%;
+}
+.qualifications-text-right > p {
+  font-size: 16px;
+  font-weight: 400;
 }
 .qualifications-swiper {
   margin-top: 105px;
@@ -997,6 +1011,9 @@ h2 {
   .culture-container ul {
     flex-direction: column;
     align-items: center;
+  }
+  .culture-container ul > li a img {
+    height: 200px;
   }
   .qualifications-text {
     flex-direction: column;

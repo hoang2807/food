@@ -7,13 +7,21 @@
     max-width: 1200px;
     margin-inline: auto;
     margin-bottom: 0;
-    padding-inline: 15px;
+    // padding-inline: 15px;
     li {
       @include text-uppercase(12px, 400);
     }
     a {
       color: $text-green;
       @include text-uppercase(12px, 400);
+    }
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  .breadcrumb-container {
+    .breadcrumb {
+      padding-inline: 15px;
     }
   }
 }
