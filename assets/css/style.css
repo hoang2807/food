@@ -1062,5 +1062,92 @@ h2 {
     top: 116px;
   }
 }
+.group-image {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 400px 400px;
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+}
+.group-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.group-image .item {
+  position: relative;
+}
+.group-image .item .overlay-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.group-image .item .overlay-box .title {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.47em;
+  margin-bottom: 13px;
+}
+.group-image .item .overlay-box .location {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-bottom: 41px;
+}
+.group-image .item .overlay-box .price {
+  font-size: 30px;
+  font-weight: 500;
+  color: #21c7bb;
+  line-height: 1.5em;
+  display: flex;
+  gap: 0.4em;
+  flex-direction: row-reverse;
+}
+.group-image .item .overlay-box .price p {
+  font-size: 30px;
+}
+.group-image .item .overlay-box .price .off {
+  text-decoration: line-through;
+  font-size: 24px;
+  color: #fff;
+}
+.group-image .item:hover .overlay-box {
+  height: 100%;
+}
+.group-image .item:nth-child(1) {
+  grid-row: span 2/auto;
+  grid-column: span 2/auto;
+}
+.group-image .item:nth-child(2) {
+  grid-column: span 2/auto;
+}
+@media screen and (max-width: 768px) {
+  .group-image .item:nth-child(1) {
+    grid-column: span 4/auto;
+  }
+  .group-image .item:nth-child(2) {
+    grid-column: span 4/auto;
+  }
+  .group-image .item:nth-child(3) {
+    grid-column: span 2/auto;
+  }
+  .group-image .item:nth-child(4) {
+    grid-column: span 2/auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
