@@ -1085,6 +1085,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden;
   width: 100%;
+  text-align: center;
   height: 0;
   transition: 0.5s ease;
   z-index: 2;
@@ -1135,18 +1136,33 @@ h2 {
 .group-image .item:nth-child(2) {
   grid-column: span 2/auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  .group-image {
+    grid-template-rows: 240px 240px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .group-image {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 340px 340px 340px 340px;
+  }
   .group-image .item:nth-child(1) {
-    grid-column: span 4/auto;
+    grid-column: span 1/auto;
+    grid-row: span 1/auto;
   }
   .group-image .item:nth-child(2) {
-    grid-column: span 4/auto;
+    grid-column: span 1/auto;
   }
   .group-image .item:nth-child(3) {
-    grid-column: span 2/auto;
+    grid-column: span 1/auto;
   }
   .group-image .item:nth-child(4) {
-    grid-column: span 2/auto;
+    grid-column: span 1/auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .group-image {
+    grid-template-rows: 240px 240px 240px 240px;
   }
 }
 
