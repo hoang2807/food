@@ -17,6 +17,19 @@
     />
     <link rel="stylesheet" href="./assets/swiper/swiper.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      .mySwiper2 {
+        max-width: 543px;
+        width: 100%;
+        .swiper-slide {
+          max-width: 543px !important;
+          width: 100% !important;
+          height: 100% !important;
+
+          object-fit: cover;
+        }
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -81,12 +94,37 @@
                 </div>
               </div>
             </div>
-            <img
+            <!-- <img
               src="./assets/images/food-detail/image2.jpg"
               alt=""
               class="image"
               id="bigImage"
-            />
+            /> -->
+            <div
+              style="
+                --swiper-navigation-color: #fff;
+                --swiper-pagination-color: #fff;
+              "
+              class="swiper mySwiper2"
+              thumbsSlider=""
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/images/food-detail/image1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/food-detail/image2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/food-detail/image3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/food-detail/image1.jpg" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
             <img
               src="./assets/icon/food-deail/scroll.svg"
               alt=""
@@ -325,4 +363,43 @@
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/swiper/swiper.js"></script>
   <script src="./assets/js/food-detail.js"></script>
+  <script>
+    var slideImage =
+      new Swiper('.food-detail-content .swiper-container', {
+        direction: 'horizontal',
+        slidesPerView: 4,
+        spaceBetween: 28,
+        speed: 1000,
+        loop: true,
+        freeMode: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+          200: {
+            direction: 'horizontal',
+            slidesPerView: 4,
+            spaceBetween: 16,
+          },
+          657: {
+            direction: 'vertical',
+            slidesPerView: 4,
+            spaceBetween: 28,
+          },
+        },
+        navigation: {
+          prevEl: '.food-detail-content .scroll',
+        },
+      }) || false;
+
+    var swiper2 =
+      new Swiper('.mySwiper2', {
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+          swiper: slideImage,
+        },
+      }) || false;
+  </script>
 </html>
